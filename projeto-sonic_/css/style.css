@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-board{
+    background: linear-gradient(#87CEEB, #E0F6FF);
+    border-bottom:10px solid green ;
+    width: 80%;
+    height: 600px;
+    /*border: 1px solid #333;*/
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.doctor{
+    transform: scaleX(-1);
+    position: absolute;  
+    bottom: 5px;
+    width: 200px;
+    
+    
+    animation: doctor-animation 3s infinite linear;
+    
+  }
+
+  .sonic{
+    position: absolute;
+    width: 80px;       
+    bottom: 1px;
+    right: 1000px;
+    /*animation: sonic-animation 10s infinite linear;*/
+    
+    }
+
+    .jump{ 
+        animation: jump 500ms ease-out;
+        
+    }
+    .clouds{
+        position: absolute;
+        width: 400px;
+        right: -46%;
+        animation: clouds-animation 30s infinite linear;
+    }
+
+    /*.pipe{
+        position: absolute; 
+        width: 50px;
+        bottom: 40px;
+        animation: pipe-animation 5s infinite linear;
+    
+    }*/
+
+    .grama{
+        position: absolute;
+        width: 1365px;
+        height: 50px;
+        bottom: 0;
+        /*animation: grama-animation 5s infinite linear;*/
+
+    }
+
+    .coqueiros{
+        
+        top: 118px;
+    }
+
+    
+
+    @keyframes pipe-animation {
+        from {
+            right: -50%;
+    
+        }
+    
+        to {
+            right: 100%;
+    
+        }
+    
+    }
+
+    @keyframes doctor-animation {
+        from {
+            right: 0;
+    
+        }
+    
+        to {
+            right: 100%;
+    
+        }
+    
+    }
+
+    @keyframes sonic-animation {
+        from{
+            left: -35%;
+        }
+    
+        to{
+            left: 100%;
+        }    
+    }
+    
+    @keyframes jump {
+        0% {
+            bottom: 0;
+        }
+    
+        40%{
+            bottom: 250px;
+        }
+    
+    
+        50%{
+            bottom: 300px;
+        }
+    
+        60%{
+            bottom: 250px;
+        }
+    
+        100%{
+            bottom: 0;
+    
+        }
+    
+    }
+    
+    @keyframes clouds-animation{
+        from {
+            right: -46;
+    
+        }
+    
+        to {
+            right: 100%;
+    
+        }
+    
+    }
+
+    @keyframes grama-animation{
+        from {
+            right: 0;
+    
+        }
+    
+        to {
+            right: 100%;
+    
+        }
+    
+    }
+
+    
