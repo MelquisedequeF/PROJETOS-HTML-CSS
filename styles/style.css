@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #13ad58;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    background-color: #201b2c;
+    border-radius: 0px 20px 0px 20px;
+    box-shadow: 5px 5px 5px 5px rgba(40, 35, 78, 0.205);
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+}
+
+.login-container h1 {
+    color: #3ee295;   /*COLOR - LOGIN - SEEKIT*/
+    font-size: 30px;
+    margin-left: 95px;
+    margin-bottom: 2px;
+}
+
+.login-form {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #3ee295;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline-color:#3ee295;
+}
+
+.form-group input[type="submit"] {    /* - "Botão Entrar" */
+    background-color: #201b2c;
+    border-color:#3ee295;
+    color: #f8f3f3; 
+    cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover {
+    animation-name: pulse;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background-color: #13ad58;
+
+}
+@keyframes pulse {
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.05);
+    }
+}
+@media (max-width: 480px) {
+    .login-container {
+        width: 100%;
+    }
+}
